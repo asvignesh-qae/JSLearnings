@@ -14,9 +14,9 @@ function writeContent(filePath, contentToWrite){
 }
 
 let readNWrite = (filePath, contentToWrite)=>{
-    let read = readContent(filePath);
+    let r = readContent(filePath);
     console.log(`The read data from the file is ${r}`);
-    writeContent(filePath, read + contentToWrite);
+    writeContent(filePath, r + contentToWrite);
 }
 
 console.log(
